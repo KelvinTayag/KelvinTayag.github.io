@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+}   
+
+html {
+    background-color: #F8B195;
+    scroll-padding-top: 25%;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #355C7D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #F67280;
+    border-radius: 5px;
+}
+
+.sidebar {
+    background-color: #ab65e9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 250px;
+    height: 100%;
+    top: 0%;
+    position: fixed;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #F67280;
+}
+
+main {
+    justify-items: center;
+    margin-top: 10%;
+    font-family: sans-serif;
+}
+
+.AboutMe, .Likes, .Hobby, .Contacts {
+    color: white;
+    background-color: #355C7D;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    gap: 20px;
+}
+
+.icons img {
+    transition: transform .2s;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.icons :hover{
+    transform: scale(1.1);
+}   
+
+footer {
+    background-color: #355C7D;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1200px) and (orientation: portrait){
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    main {
+        justify-items: end;
+        margin-right: 4%;
+    }
+
+    .main-content {
+        margin-top: 15%;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 700px;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 20   px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    footer {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    html {
+        scroll-padding-top: 35%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    main {
+        justify-items: end;
+        margin-left: 10%;
+    }
+
+    .main-content {
+        margin-top: 15%;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 500px;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    footer {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    html {
+        scroll-padding-top: 35%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    .main-content {
+        margin-top: 50%;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 240px;
+    }   
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    html {
+        scroll-padding-top: 35%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    main {
+        justify-items: right;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 240px;
+    }
+
+    .main-content {
+        margin-top: 30%;
+    }
+
+    .sidebar {
+        width: 130px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .icons img {
+        height: 30px;
+    }
+
+    footer {
+        font-size: 10px;
+        margin-left: 70px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+    html {
+        scroll-padding-top: 35%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    main {
+        justify-items: right;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 240px;
+    }
+
+    .main-content {
+        margin-top: 30%;
+    }
+
+    .sidebar {
+        width: 120px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .icons img {
+        height: 30px;
+    }
+
+    footer {
+        font-size: 10px;
+        margin-left: 70px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 800px;
+    }
+
+    .main-content {
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    html {
+        scroll-padding-top: 35%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    main {
+        justify-items: right;
+    }
+
+    .main-content {
+        margin-top: 10%;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    html {
+        scroll-padding-top: 35%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 600px;
+    }
+
+    main {
+        margin: 0%;
+    }
+
+    .main-content {
+        margin-top: 10%;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+    html {
+        scroll-padding-top: 22%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    .main-content {
+        margin-top: 15%;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 500px;
+    }
+
+    .sidebar {
+        width: 100px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) and (orientation: landscape) {
+    html {
+        scroll-padding-top: 22%;
+    }
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    main {
+        margin-left: 20%;
+    }
+
+    .main-content {
+        margin-top: 15%;
+    }
+
+    .AboutMe, .Likes, .Hobby, .Contacts {
+        padding: 10px;
+        width: 1200px;
+    }
+
+    .sidebar {
+        width: 100px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

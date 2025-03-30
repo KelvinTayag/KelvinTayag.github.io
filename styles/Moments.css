@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: #F8B195;
+
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #355C7D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;    
+}
+
+.navbar a:hover {
+    background-color: #F67280;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 10%;
+}
+
+h1 {
+    color: #c92297;
+    font-size: 60px;
+    text-align: center;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    border-radius: 10px;
+    width: 20%;
+    margin-top: 20px
+}
+
+footer {
+    background-color: #355C7D;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+@media (max-width: 900px) and (orientation: portrait) {
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 50%;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 30%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+
+@media (max-width: 400px) and (orientation: portrait) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 30%;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 300px) and (orientation: portrait) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 30%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 50%;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 10%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+
+@media (max-width: 500px) and (orientation: landscape) {
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 10%;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 400px) and (orientation: landscape) {
+    .navbar {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 10%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 12px;
+    }
+}
