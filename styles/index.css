@@ -64,13 +64,13 @@ h4 {
     color: #140c5e;
 }
 
-footer {
+/* footer {
     background-color: #355C7D;
     padding: 10px;
     color: white;
     text-align: center;
     width: 100%;
-}
+} */
 
 @media (max-width: 1000px) and (orientation: portrait) {
     .navbar {
